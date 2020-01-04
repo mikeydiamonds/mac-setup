@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# A script to set up a new mac. Uses bash, homebrew, etc.
+# A script to set up a new mac using Homebrew.
 
 # notifications
 function echo_ok { echo -e '\033[1;32m'"$1"'\033[0m'; }
