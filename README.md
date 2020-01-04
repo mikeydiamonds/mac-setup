@@ -3,6 +3,10 @@
 ## Options
 
  1. Use osx-setup.sh on a fresh Mac
+    - you may need to set permissions before running `./osx-setup.sh`:
+
+    - ```chmod a+x osx-setup.sh```
+
  2. The Brewfile can be used if [Homebrew](https://brew.sh/) is already present using:
 
 ```brew bundle install```
