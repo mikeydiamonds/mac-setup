@@ -1,15 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
 # A script to set up a new mac. Uses bash, homebrew, etc.
-
-# Focused for ruby/rails development. Includes many utilities and apps:
-# - homebrew, rvm, node
-# - quicklook plugins, terminal fonts
-# - browsers: chrome, firefox
-# - dev: iterm2, sublime text, postgres, chrome devtools, etc.
-# - team: slack, dropbox, google drive, skype, etc
-# - utils: unarchiver, o-day, caffine, skitch, etc
-# - productivity: evernote, viscosity, omnigraffle, karabiner, etc.
 
 # notifications
 function echo_ok { echo -e '\033[1;32m'"$1"'\033[0m'; }
@@ -23,10 +14,11 @@ xcode-select --install
 
 # homebrew
 if hash brew &> /dev/null; then
-    echo_ok "Homebrew already installed"
+    echo_ok "Homebrew already installed, updating"
+    brew update
 else
     echo_warn "Installing homebrew..."
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 # let the homebrew bundle do it's thing
@@ -35,7 +27,7 @@ brew bundle install
 
 # cleanup after homebrew
 echo_ok "A little housekeeping..."
-brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
+brew cleanup
 
 echo
 echo_ok "Done."
