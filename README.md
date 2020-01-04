@@ -2,7 +2,7 @@
 
 ## Requirements
 
- - Brew : https://brew.sh/index_pt-br
+ - Brew : https://brew.sh/
 
 
 ## Using
