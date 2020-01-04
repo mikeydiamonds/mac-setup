@@ -1,4 +1,4 @@
-# mac-setup
+# macOS Setup
 
 ## Options
 
