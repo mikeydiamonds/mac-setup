@@ -7,6 +7,7 @@ tap "homebrew/core"
 brew "mas"
 
 mas "1Password 7", id: 1333542190
+mas "Any.do", id: 944960179
 mas "Coin Tick", id: 1141688067
 mas "ColorSlurp", id: 1287239339
 mas "Keynote", id: 409183694
@@ -36,6 +37,7 @@ cask "dash"
 cask "docker"
 cask "dropbox"
 cask "firefox"
+cask "geektool"
 cask "google-chrome"
 cask "grammarly"
 cask "iterm2"
