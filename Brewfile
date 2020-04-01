@@ -1,8 +1,11 @@
 cask_args appdir: "/Applications"
+tap "beeftornado/rmtree"
+tap "caskroom/versions"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "homebrew/services"
 
 brew "mas"
 
@@ -10,6 +13,8 @@ mas "1Password 7", id: 1333542190
 mas "Any.do", id: 944960179
 mas "Coin Tick", id: 1141688067
 mas "ColorSlurp", id: 1287239339
+mas "DaVinci Resolve", id: 571213070
+mas "feedly", id: 865500966
 mas "Keynote", id: 409183694
 mas "LastPass", id: 926036361
 mas "Magnet", id: 441258766
@@ -41,6 +46,7 @@ cask "geektool"
 cask "google-chrome"
 cask "grammarly"
 cask "iterm2"
+cask "obs"
 cask "vanilla"
 cask "visual-studio-code"
 cask "transmission"
@@ -55,12 +61,14 @@ brew "composer"
 brew "docker-compose"
 brew "ffmpeg"
 brew "git"
+brew "imagemagick"
 brew "jq"
 brew "mtr"
 brew "nmap"
 brew "node"
 brew "openssl"
 brew "stern"
+brew "terraform"
 brew "watch"
 brew "youtube-dl"
 brew "wget"
