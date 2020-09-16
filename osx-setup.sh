@@ -18,7 +18,7 @@ if hash brew &> /dev/null; then
     brew update
 else
     echo_warn "Installing homebrew..."
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 # let the homebrew bundle do it's thing
